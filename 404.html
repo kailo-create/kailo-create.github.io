@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <script>try{var t=localStorage.getItem("st.theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="慢慢玩" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="theme-color" content="#111315" />
+    <title>慢慢玩 Slowly Travel</title>
+    <!-- Web fonts load in the background (system fonts show first), so they never hold up the first paint. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&display=swap" /></noscript>
+    <style>html{background:#f7f5f1}@media (prefers-color-scheme:dark){html{background:#0e1315}}#splash{z-index:9999;color:#1b2638;background:#f6f2ea;place-items:center;font-family:-apple-system,BlinkMacSystemFont,PingFang TC,sans-serif;transition:opacity .45s;display:grid;position:fixed;inset:0}@media (prefers-color-scheme:dark){html:not([data-theme=light]) #splash{color:#efe8da;background:#0e141e}}html[data-theme=dark] #splash{color:#efe8da;background:#0e141e}#splash.out{opacity:0;pointer-events:none}#splash .box{justify-items:center;gap:10px;display:grid;transform:translateY(-4vh)}#splash svg{width:min(46vw,200px);height:auto;overflow:visible}#splash .route{fill:none;stroke:url(#spTeal);stroke-width:37px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1px;animation:1s cubic-bezier(.6,0,.2,1) .1s forwards spDraw}#splash .trail{fill:none;stroke:#ffad51;stroke-width:13px;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1px;animation:.35s ease-out forwards spDraw}#splash .speed{stroke:#7acfc0;stroke-width:7px;stroke-linecap:round;opacity:0;animation:.3s .9s forwards spFade}#splash .plane{fill:#ff865f;opacity:0;animation:.2s 1.05s forwards spFade}#splash .mover{fill:#ff865f;opacity:0;animation:1s linear .1s forwards spMove}@keyframes spMove{0%,94%{opacity:1}to{opacity:0}}#splash .name{letter-spacing:4px;opacity:0;font-size:30px;font-weight:800;animation:.5s 1.05s forwards spUp}#splash .tag{opacity:0;color:#6c7a7f;font-size:12.5px;font-style:italic;animation:.5s 1.25s forwards spUp}@keyframes spDraw{to{stroke-dashoffset:0}}@keyframes spFade{to{opacity:1}}@keyframes spUp{0%{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@media (prefers-reduced-motion:reduce){#splash .route,#splash .trail{stroke-dashoffset:0;animation:none}#splash .speed,#splash .plane,#splash .name,#splash .tag{opacity:1;animation:none}#splash .mover{display:none}}</style>
+    <script type="module" crossorigin src="/assets/index-DMIkO0XV.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-BCiCTKAo.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-BWPDF9mI.js">
+    <link rel="modulepreload" crossorigin href="/assets/jsx-runtime-BB9-612F.js">
+    <link rel="modulepreload" crossorigin href="/assets/preload-helper-7y9sWmk5.js">
+    <link rel="modulepreload" crossorigin href="/assets/chunk-6KYCQHYJ-DQcMk07d.js">
+    <link rel="modulepreload" crossorigin href="/assets/supabase-D91a9Iv4.js">
+    <link rel="modulepreload" crossorigin href="/assets/coords-pobQV2vf.js">
+    <link rel="modulepreload" crossorigin href="/assets/trips-D-4yYTew.js">
+    <link rel="modulepreload" crossorigin href="/assets/world-uUk4-pn1.js">
+    <link rel="modulepreload" crossorigin href="/assets/offline-BygWJne4.js">
+    <link rel="modulepreload" crossorigin href="/assets/Logo-CnpI1TXA.js">
+    <link rel="modulepreload" crossorigin href="/assets/TabBar-CEcFlORq.js">
+    <link rel="stylesheet" crossorigin href="/assets/TabBar-BvXiDhT3.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-0y_d_IKF.css">
+  </head>
+  <body>
+    <div id="splash" aria-hidden="true">
+      <div class="box">
+        <svg viewBox="0 0 420 360">
+          <defs><linearGradient id="spTeal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18b89f"/><stop offset="1" stop-color="#087f9c"/></linearGradient></defs>
+          <path class="trail" pathLength="1" d="M12 335 C28 313 43 291 64 262"/>
+          <path id="spPath" class="route" pathLength="1" d="M61 270 C90 299 124 319 168 324 C230 332 288 309 304 266 C318 227 292 200 237 184 C179 168 108 167 89 121 C72 78 105 31 164 15 C216 0 269 12 309 45"/>
+          <path class="speed" d="M55 214h29M38 232h34M25 250h29"/>
+          <path class="plane" d="M312 41 L392 13 Q400 11 403 17 Q405 22 398 27 L340 66 L363 86 Q367 90 364 94 Q361 98 356 95 L323 79 L300 96 L303 111 Q304 116 299 117 Q295 118 292 113 L280 91 L264 83 L261 77 Q260 73 265 72 L281 71 L300 53 Q304 49 312 41Z" transform="rotate(-8 331 65)"/>
+          <g class="mover"><path d="M-14 -7 L16 0 L-14 7 L-8 0Z"><animateMotion dur="1s" begin="0.1s" fill="remove" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines=".6 0 .2 1"><mpath href="#spPath"/></animateMotion></path></g>
+        </svg>
+        <div class="name">慢慢玩</div>
+        <div class="tag">Make Every Journey Memorable and Effortlessly Organized.</div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var el = document.getElementById('splash');
+        var seen = false;
+        try { seen = sessionStorage.getItem('st.splash') === '1'; sessionStorage.setItem('st.splash', '1'); } catch (e) {}
+        if (seen) { el.remove(); return; }
+        var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+        function done() { if (!el.isConnected) return; el.classList.add('out'); setTimeout(function () { el.remove(); }, 480); }
+        el.addEventListener('click', done);
+        setTimeout(done, still ? 700 : 1900);
+      })();
+    </script>
+    <div id="root"></div>
+  </body>
+</html>
